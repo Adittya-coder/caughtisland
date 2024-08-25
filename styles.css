@@ -1,0 +1,223 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000; /* Warna background umum */
+    color: #D9A37E; /* Warna teks */
+}
+
+/* Section 1 */
+.section-1, .section-2, .section-3, .section-4, .section-5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh; /* Mengatur tinggi minimum menjadi setengah dari viewport */
+}
+
+.section-1 {
+    background-color: #000; /* Warna background untuk bagian pertama */
+    height: 100vh;
+}
+
+.logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 100px;
+}
+
+.container {
+    text-align: center;
+}
+
+.text {
+    font-size: 3rem;
+    color: #D9A37E;
+    font-weight: bold;
+}
+
+.bryn {
+    margin-top: -10px; /* Menyesuaikan jarak antara teks */
+}
+
+/* Section 2: Profil */
+.section-2 {
+    background-color: #000; /* Warna background sesuai gambar */
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+}
+
+.profile-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: #D9A37E;
+}
+
+.profile-image {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.profile-text {
+    max-width: 500px;
+    text-align: left;
+    font-size: 1.2rem;
+}
+
+/* Section 3 */
+.section-3 {
+    background-color: #D9A37E; /* Warna latar belakang sesuai gambar */
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 2rem;
+    color: black;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.content-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.content-item {
+    width: 30%;
+    margin: 10px;
+    text-align: left;
+}
+
+.content-item img {
+    width: 100%;
+    height: auto;
+}
+
+.content-item h2 {
+    font-size: 1.5rem;
+    color: black;
+    margin-top: 10px;
+}
+
+.content-item p {
+    font-size: 1rem;
+    color: black;
+}
+
+/* Section 4: Produk */
+.section-4 {
+    background-color: #e8b698;
+    padding: 20px;
+    text-align: center;
+    flex-direction: column;
+}
+
+.product {
+    text-align: center;
+    width: 30%;
+}
+
+.product h3 {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin: 0 0 10px 0;
+}
+
+.product img {
+    width: 100%;
+    max-width: 300px;
+    border: 2px solid black;
+}
+
+/* Section 5: Terima Kasih */
+.section-5 {
+    background-color: #e8b698;
+    padding: 50px;
+    position: relative;
+    flex-direction: column;
+}
+
+.thanks-text {
+    flex: 1;
+    text-align: left;
+    padding: 20px;
+}
+
+.thanks-text h1 {
+    font-size: 3rem;
+    color: black;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    text-align: left;
+}
+
+.contact-item {
+    background-color: transparent;
+    border: 2px solid black;
+    padding: 10px 20px;
+    display: inline-block;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    color: black;
+}
+
+.decorative-bg {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    background-image: url('gambar/decorative-pattern.jpg'); /* Ganti sesuai gambar background dekoratif */
+    background-size: cover;
+    background-position: center;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .text {
+        font-size: 2.5rem;
+    }
+
+    .vertical-text {
+        font-size: 2rem;
+    }
+
+    .logo img {
+        width: 70px;
+    }
+
+    .content-item, .product {
+        width: 45%;
+    }
+
+    .profile-card {
+        flex-direction: column;
+    }
+
+    .decorative-bg {
+        width: 100%;
+        height: 50%;
+    }
+}
+
+@media (max-width: 768px) {
+    .text {
+        font-size: 2rem;
+    }
+
+    .vertical-text {
+        font-size: 1.5rem;
+    }
+}
